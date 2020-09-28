@@ -14,13 +14,22 @@
         <p>
             <label for="mail">
                 <span>Please enter an email address:</span>
-                <input type="email" id="mail" name="mail" required minlength="10">
+                <input type="email" id="mail" name="mail">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="message">
+                <span>Please enter the message:</span>
+                <input type="text" id="message" name="message">
                 <span class="error" aria-live="polite"></span>
             </label>
         </p>
         <button>Submit</button>
     </form>
-
+    <div id="messages">
+        <h1>Here be messages</h1>
+    </div>
 </body>
 
 </html>
